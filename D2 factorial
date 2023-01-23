@@ -1,0 +1,18 @@
+code :- 
+
+a=as.integer(readline(prompt="Enter the number :"))
+factorial=1
+if(a<0)
+{
+    print("factorial doesnot exists")
+}else if(a==0)
+{
+  print("factorial of 0 is 1")
+}else
+{
+  for(i in 1:a)
+  {
+    factorial=factorial*i
+  }
+  print(paste("the factorial of",a,"is",factorial))
+}
